@@ -10,37 +10,33 @@ const options = {
   padding: 1,
   margin: 2,
   borderStyle: "double",
-  borderColor: "#F20089",
+  borderColor: "#039eff",
 };
 
 const data = {
-  logo: chalk.white(`     __ _____ 
-  __|  |     |
- |  |  |  |  |
- |_____|_____|
-  _____ _____ 
- |   __|   __|
- |__   |   __|
- |_____|_____|`),
-  name: chalk.white(" Joselito /"),
+  logo: chalk.blue.bgWhite.bold(`                
+  devfelizardo  
+                `),
+  name: chalk.white(" André Felizardo /"),
   mail: {
-    en: chalk.hex("#F20089")("hey@joseli.to"),
-    pt: chalk.hex("#F20089")("oi@joseli.to"),
+    en: chalk.hex("##039eff")("contato@andrefelizardo.com.br"),
+    pt: chalk.hex("##039eff")("contato@andrefelizardo.com.br"),
   },
   pronoun: {
     en: chalk.white("(he/him/his)"),
     pt: chalk.white("(ele/dele)"),
   },
   work: {
-    en: chalk.white("Tech Lead @ StoneCo"),
-    pt: chalk.white("Tech Lead / Stone Pagamentos"),
+    en: chalk.white("Web Engineer @ Accenture Interactive"),
+    pt: chalk.white("Web Engineer / Accenture Interactive"),
   },
-  twitter: chalk.hex("#F20089")("https://twitter.com/breakzplatform"),
-  github: chalk.hex("#F20089")("https://github.com/breakzplatform"),
-  unsplash: chalk.hex("#F20089")("https://unsplash.com/@breakzplatform"),
-  picpay: chalk.hex("#F20089")("https://picpay.me/joselitojunior"),
-  web: chalk.hex("#F20089")("https://joseli.to"),
-  npx: chalk.white("npx joselito"),
+  twitter: chalk.hex("##039eff")("https://twitter.com/devfelizardo"),
+  github: chalk.hex("##039eff")("https://github.com/andrefelizardo"),
+  youtube: chalk.hex("##039eff")("https:/youtube.com/andrefelizardo"),
+  instagram: chalk.hex("##039eff")("https://instagram.com/devfelizardo"),
+  picpay: chalk.hex("##039eff")("https://picpay.me/andrefelizardo"),
+  web: chalk.hex("##039eff")("https://andrefelizardo.com.br"),
+  npx: chalk.white("npx felizardo"),
 };
 
 const defaultLabel = {
@@ -48,8 +44,9 @@ const defaultLabel = {
     work: chalk.white.bold("      Work:"),
     twitter: chalk.white.bold("   Twitter:"),
     github: chalk.white.bold("    GitHub:"),
+    youtube: chalk.white.bold("    YouTube:"),
+    instagram: chalk.white.bold("    Instagram:"),
     picpay: chalk.white.bold("    PicPay:"),
-    unsplash: chalk.white.bold("  Unsplash:"),
     web: chalk.white.bold("       Web:"),
     npx: chalk.white.bold("      Card:"),
   },
@@ -69,18 +66,18 @@ const output = `${data.logo}
 ${data.name} ${data.mail[lang]} ${data.pronoun[lang]}
 
 
-${label[lang].work}  ${data.work[lang]}
+   ${label[lang].work}    ${data.work[lang]}
 
-${label[lang].web}  ${data.web}
+   ${label[lang].web}    ${data.web}
 
-${label[lang].twitter}  ${data.twitter}
-${label[lang].github}  ${data.github}
-${label[lang].unsplash}  ${data.unsplash}
-${label[lang].picpay}  ${data.picpay}
+   ${label[lang].twitter}    ${data.twitter}
+   ${label[lang].github}    ${data.github}
+  ${label[lang].youtube}    ${data.youtube}
+${label[lang].instagram}    ${data.instagram}
 
-${label[lang].npx}  ${data.npx}`;
+   ${label[lang].npx}    ${data.npx}`;
 
 console.clear();
 console.log(`
 `);
-console.log(chalk.magenta(boxen(output, options)));
+console.log(chalk.blue(boxen(output, options)));
