@@ -14,13 +14,14 @@ const options = {
 };
 
 const data = {
-  logo: chalk.blue.bgWhite.bold(`                
-  devfelizardo  
-                `),
-  name: chalk.white(" André Felizardo /"),
+  logo: chalk.blue.bgWhite.bold(
+`         
+  Kbooz  
+         `),
+  name: chalk.white(" Lucas Inacio /"),
   mail: {
-    en: chalk.hex("##039eff")("contato@andrefelizardo.com.br"),
-    pt: chalk.hex("##039eff")("contato@andrefelizardo.com.br"),
+    en: chalk.hex("##039eff")("lucas@kbooz.com"),
+    pt: chalk.hex("##039eff")("lucas@kbooz.com"),
   },
   pronoun: {
     en: chalk.white("(he/him/his)"),
@@ -30,13 +31,13 @@ const data = {
     en: chalk.white("Web Engineer @ Accenture Interactive"),
     pt: chalk.white("Web Engineer / Accenture Interactive"),
   },
-  twitter: chalk.hex("##039eff")("https://twitter.com/devfelizardo"),
-  github: chalk.hex("##039eff")("https://github.com/andrefelizardo"),
-  youtube: chalk.hex("##039eff")("https:/youtube.com/andrefelizardo"),
-  instagram: chalk.hex("##039eff")("https://instagram.com/devfelizardo"),
-  picpay: chalk.hex("##039eff")("https://picpay.me/andrefelizardo"),
-  web: chalk.hex("##039eff")("https://andrefelizardo.com.br"),
-  npx: chalk.white("npx felizardo"),
+  twitter: chalk.hex("##039eff")("https://twitter.com/kbooz"),
+  github: chalk.hex("##039eff")("https://github.com/kbooz"),
+  youtube: chalk.hex("##039eff")("https://youtube.com/kbooz"),
+  instagram: chalk.hex("##039eff")("https://instagram.com/kbooz"),
+  picpay: chalk.hex("##039eff")("https://picpay.me/kbooz"),
+  web: chalk.hex("##039eff")("https://kbooz.com.br"),
+  npx: chalk.white("npx kbooz"),
 };
 
 const defaultLabel = {
@@ -65,9 +66,7 @@ const output = `${data.logo}
 
 ${data.name} ${data.mail[lang]} ${data.pronoun[lang]}
 
-
    ${label[lang].work}    ${data.work[lang]}
-
    ${label[lang].web}    ${data.web}
 
    ${label[lang].twitter}    ${data.twitter}

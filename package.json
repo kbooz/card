@@ -1,14 +1,14 @@
 {
-  "name": "felizardo",
+  "name": "kbooz",
   "version": "1.0.0",
-  "description": "A personal card for André Felizardo (@andrefelizardo)",
+  "description": "A personal card for Lucas Inacio (@kbooz)",
   "main": "index.js",
   "bin": {
-    "felizardo": "./bin/card.js"
+    "kbooz": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrefelizardo/card.git"
+    "url": "git+https://github.com/kbooz/card.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,17 +16,16 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "commander": "^2.19.0",
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
+    "standard": "^14.3.4"
   },
   "bugs": {
-    "url": "https://github.com/andrefelizardo/card/issues"
+    "url": "https://github.com/kbooz/card/issues"
   },
-  "homepage": "https://github.com/andrefelizardo/card#readme",
-  "author": "André Felizardo <contato@andrefelizardo.com.br> (http://www.andrefelizardo.com.br)"
+  "homepage": "https://github.com/kbooz/card#readme",
+  "author": "Lucas Inacio <lucas@kbooz.com> (http://www.kbooz.com.br)"
 }
